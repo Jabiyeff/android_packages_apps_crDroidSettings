@@ -45,6 +45,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.ui.CutoutSettings;
 import com.crdroid.settings.fragments.ui.DozeSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
+import com.crdroid.settings.fragments.ui.RoundedCorners;
 import com.crdroid.settings.utils.DeviceUtils;
 
 import java.util.ArrayList;
@@ -82,6 +83,7 @@ public class UserInterface extends SettingsPreferenceFragment {
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
+<<<<<<< HEAD
         Settings.System.putIntForUser(resolver,
                 Settings.System.NAVBAR_STYLE, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
@@ -97,6 +99,7 @@ public class UserInterface extends SettingsPreferenceFragment {
         CutoutSettings.reset(mContext);
         DozeSettings.reset(mContext);
         SmartPixels.reset(mContext);
+        RoundedCorners.reset(mContext);
     }
 
     @Override
